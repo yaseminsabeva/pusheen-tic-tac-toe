@@ -1,7 +1,10 @@
 let xTurn = true;
 let isGameOver = false;
-const board = ["", "", "", "", "", "", "", "", ""];
+let board = ["", "", "", "", "", "", "", "", ""];
+
 const cells = document.querySelectorAll(".cell");
+const victoryScreen = document.querySelector(".victory-screen");
+const restartButton = document.querySelector('.play-again-btn')
 
 cells.forEach((cell) => {
   cell.addEventListener("click", handleCellClick);
@@ -67,7 +70,6 @@ function gameWon() {
 }
 
 function victoryFun() {
-  const victoryScreen = document.querySelector(".victory-screen");
   victoryScreen.classList.remove("hidden");
   if (!xTurn) {
     document.querySelector(".winner-picture").classList.add("player-one");
@@ -79,7 +81,19 @@ function victoryFun() {
 }
 
 function draw() {
-    const victoryScreen = document.querySelector(".victory-screen");
     victoryScreen.classList.remove("hidden");
     document.querySelector(".message").textContent = "Oopsies, looks like it's a draw 😳";
+}
+
+restartButton.addEventListener('click', restartGame)
+
+function restartGame() {
+    victoryScreen.classList.add("hidden")
+    document.querySelector('.winner-picture').classList.remove('player-one', 'player-two')
+    isGameOver = false;
+    xTurn = true;
+    cells.forEach(cell => {
+        cell.classList.remove('player-one', 'player-two')
+    })
+    board = ["", "", "", "", "", "", "", "", ""]
 }
