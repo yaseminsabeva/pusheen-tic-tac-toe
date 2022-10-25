@@ -16,15 +16,41 @@
     <section class="container" id="container">
       <div class="shop box-design">
         <h2>Shop</h2>
+        <div class="currency">
+          <div>
+            <img class="treat" src="/images/cat-treat.png" alt="cat treat" />
+            <span class="cat-treat">0</span>
+          </div>
+          <div>
+            <img class="treat" src="/images/dog-treat.png" alt="dog treat" />
+            <span class="dog-treat">0</span>
+          </div>
+        </div>
         <div class="shop-container">
-          <div class="unicorn shop-cells"></div>
-          <div class="unicorn-price">2</div>
-          <div class="pip shop-cells"></div>
-          <div class="pip-price">4</div>
-          <div class="lulu shop-cells"></div>
-          <div class="lulu-price"></div>
-          <div class="tommy shop-cells">2</div>
-          <div class="tommy-price">3</div>
+          <div class="unicorn shop-cells">
+            <div class="price cat">
+              <img class="treat" src="/images/cat-treat.png" alt="cat treat" />
+              <span>1</span>
+            </div>
+          </div>
+          <div class="pip shop-cells">
+            <div class="price cat">
+              <img class="treat" src="/images/cat-treat.png" alt="cat treat" />
+              <span>1</span>
+            </div>
+          </div>
+          <div class="lulu shop-cells">
+            <div class="price dog">
+              <img class="treat" src="/images/dog-treat.png" alt="dog treat" />
+              <span>1</span>
+            </div>
+          </div>
+          <div class="tommy shop-cells">
+            <div class="price dog">
+              <img class="treat" src="/images/dog-treat.png" alt="dog treat" />
+              <span>1</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="board box-design" id="board">
@@ -41,13 +67,16 @@
       <div class="rules box-design">
         <h2>Rules</h2>
         <ul>
-          <li>First player to get 3 of their marks in a row (up, down, across, or diagonally wins</li>
+          <li>
+            First player to get 3 of their marks in a row (up, down, across, or
+            diagonally wins
+          </li>
           <li>When all 9 squares are full the game ends in a tie</li>
-          <li>Earn victories to customize how your character looks! </li>
+          <li>Earn victories to customize how your character looks!</li>
         </ul>
       </div>
     </section>
- 
+
     <div class="victory-screen hidden" id="victory">
       <div class="winner-picture"></div>
       <div class="message"></div>
