@@ -10,6 +10,8 @@ const shopCells = document.querySelectorAll('.shop-cells');
 const cells = document.querySelectorAll(".cell");
 const victoryScreen = document.querySelector(".victory-screen");
 const restartButton = document.querySelector('.play-again-btn');
+const restoreButton = document.querySelector('.restore');
+const boardElement = document.querySelector('.board');
 
 cells.forEach((cell) => {
   cell.addEventListener("click", handleCellClick);
@@ -121,14 +123,28 @@ function buyAvatar(event) {
     priceElement.querySelector('span').textContent = 0
     target.classList.add("out-of-stock")
     if(priceElement.classList.contains('cat')){
-      document.querySelector('.board').classList.remove('unicorn','pip')
-      document.querySelector('.victory-screen').classList.remove('unicorn','pip')
+      boardElement.classList.remove('unicorn','pip')
+      victoryScreen.classList.remove('unicorn','pip')
     } else {
-      document.querySelector('.board').classList.remove('lulu','tommy')
-      document.querySelector('.victory-screen').classList.remove('lulu','tommy')
+      boardElement.classList.remove('lulu','tommy')
+      victoryScreen.classList.remove('lulu','tommy')
     }
-    document.querySelector('.board').classList.add(skin)
-    document.querySelector('.victory-screen').classList.add(skin)
+    boardElement.classList.add(skin)
+    victoryScreen.classList.add(skin)
     treatsBalance.textContent = Number(treatsBalance.textContent) - Number(price)
   };
 };
+
+restoreButton.addEventListener('click', restoreSkin)
+
+function restoreSkin() {
+  boardElement.className = "board box-design"
+  victoryScreen.className = "victory-screen hidden"
+  // const classOfBoard = boardElement.classList
+  // for(const element of classOfBoard) {
+  //     if(element === 'unicorn' || element === 'pip' || element === 'tommy' || element === 'lulu') {
+  //       classOfBoard.remove('unicorn','pip','tommy','lulu')
+  //       victoryScreen.classList.remove('unicorn','pip','tommy','lulu')
+  //     }
+  // }
+}

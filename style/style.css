@@ -14,14 +14,14 @@ body {
 }
 
 header {
-  height: 200px;
+  height: 150px;
   width: 100vw;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   box-shadow: 0px -2px 20px 2px rgba(167, 88, 105, 0.4);
 }
 
@@ -36,7 +36,7 @@ section {
 
 
 .shop {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
 .shop-cells {
@@ -44,8 +44,8 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 150px;
-  width: 150px;
+  height: 125px;
+  width: 125px;
   border: 5px solid rgb(255, 127, 161);
 }
 
@@ -53,8 +53,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 20px;
-  padding-top: 30px;
+  gap: 10px;
+  padding: 20px;
 }
 
 .shop-cells .price {
@@ -62,7 +62,7 @@ section {
   bottom: 0;
   right: 0;
   background-color: white;
-  border-top-left-radius: 10px;
+  border-top-left-radius: .7rem;
   padding: 6px;
 }
 
@@ -72,20 +72,21 @@ section {
 }
 
 .rules {
-  padding: 40px 40px 50px 40px;
-  font-size: 1.7rem;
-  line-height: 2.4rem;
+  padding: 22px 20px 40px 20px;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 .rules > h2 {
   text-decoration: underline;
   padding-left: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  
 }
 
 .shop > h2 {
   text-decoration: underline;
-  padding: 30px 0 0 50px;
+  padding: 15px 0 0 45px;
 }
 
 .currency {
@@ -99,19 +100,10 @@ section {
 /* .rules ul > li {
   list-style: "💕 ";
 } */
- 
-.box-design {
-  position: relative;
-  height: 500px;
-  width: 450px;
-  background-color: white;
-  box-shadow: 0px -2px 20px 2px rgba(167, 88, 105, 0.4);
-  border-radius: 20px;
-}
 
-.board {
-  height: 650px;
-  width: 650px;
+#board {
+  width: 35%;
+  height: 500px;
   background-image: url(/images/board-bg.jpeg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -119,12 +111,20 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
+.box-design {
+  position: relative;
+  height: 450px;
+  width: 25%;
+  background-color: white;
+  box-shadow: 0px -2px 20px 2px rgba(167, 88, 105, 0.4);
+  border-radius: 20px;
+}
+
 
 .cell {
   background-image: none;
-  height: 200px;
-  width: 200px;
-  margin: 5px 8px;
+  height: 33%;
+  width: 33%;
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
@@ -165,6 +165,14 @@ section {
   background-image: url(/images/tommy.png);
 }
 
+.restore {
+  background-color: rgb(255, 127, 161);
+  color: white;
+  border-radius: 1rem;
+  padding: .7rem 1.3rem;
+  text-align: center;
+}
+
 .victory-screen {
   position: fixed;
   top: 0;
@@ -175,7 +183,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .victory-screen > .player-one,
@@ -196,14 +204,12 @@ section {
 
 .play-again-btn {
   margin: 35px;
-  width: 200px;
-  height: 50px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: rgb(255, 235, 239);
   text-align: center;
-  border: 1px solid rgb(255, 235, 239);
-  border-radius: 10px;
+  border-radius: 1rem;
   text-shadow: 4px 4px rgb(255, 255, 255);
+  padding: .7rem 2rem;
 }
 
 
