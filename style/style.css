@@ -14,19 +14,26 @@ body {
 }
 
 header {
-  height: 150px;
   width: 100vw;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-size: 1.4rem;
-  box-shadow: 0px -2px 20px 2px rgba(167, 88, 105, 0.4);
+}
+
+.logo {
+  background-image: url(../images/header-img.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  filter: drop-shadow(0 0 0.5rem rgba(157, 69, 92, 0.564));
+  height: 250px;
+  width: 500px;
 }
 
 section {
-  height: 85vh;
+  height: 70vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -54,7 +61,7 @@ section {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 10px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .shop-cells .price {
