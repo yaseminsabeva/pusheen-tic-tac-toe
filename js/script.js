@@ -1,5 +1,4 @@
 let xTurn = true;
-let isGameOver = false;
 let board = ["", "", "", "", "", "", "", "", ""];
 
 const catTreats = document.querySelector('.cat-treat');
@@ -45,8 +44,7 @@ function handleCellClick(event) {
 function gameWon() {
     //draw
     if (!board.includes('')) {
-    isGameOver = true;
-    draw();
+      draw();
     }
   //horizontal
   for (let i = 0; i < 9; i += 3) {
@@ -56,7 +54,6 @@ function gameWon() {
       board[i] === board[i + 2]
     ) {
         victoryFun();
-      isGameOver = true;
     }
   }
   //vertical
@@ -67,7 +64,6 @@ function gameWon() {
       board[i] === board[i + 6]
     ) {
         victoryFun();
-      isGameOver = true;
     }
   }
   //diagonal
@@ -76,7 +72,6 @@ function gameWon() {
     (board[2] === board[4] && board[2] === board[6]))
   ) {
     victoryFun();
-    isGameOver = true;
   }
 }
 
@@ -103,7 +98,6 @@ restartButton.addEventListener('click', restartGame);
 function restartGame() {
     victoryScreen.classList.add("hidden")
     document.querySelector('.winner-picture').classList.remove('player-one', 'player-two')
-    isGameOver = false;
     xTurn = true;
     cells.forEach(cell => {
         cell.classList.remove('player-one', 'player-two');
@@ -138,11 +132,4 @@ restoreButton.addEventListener('click', restoreSkin)
 function restoreSkin() {
   boardElement.className = "board box-design"
   victoryScreen.className = "victory-screen hidden"
-  // const classOfBoard = boardElement.classList
-  // for(const element of classOfBoard) {
-  //     if(element === 'unicorn' || element === 'pip' || element === 'tommy' || element === 'lulu') {
-  //       classOfBoard.remove('unicorn','pip','tommy','lulu')
-  //       victoryScreen.classList.remove('unicorn','pip','tommy','lulu')
-  //     }
-  // }
 }
