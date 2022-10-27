@@ -49,11 +49,10 @@ header > div {
 }
 
 .logo {
-  background-image: url(../images/header-img.png);
+  background-image: url(../images/header-pic.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  /* filter: drop-shadow(0 0 0.5rem rgba(157, 69, 92, 0.564)); */
   height: 175px;
   width: 350px;
   margin: 10px 0;
