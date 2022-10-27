@@ -4,9 +4,7 @@ let board = ["", "", "", "", "", "", "", "", ""];
 
 const catTreats = document.querySelector('.cat-treat');
 const dogTreats = document.querySelector('.dog-treat');
-
 const shopCells = document.querySelectorAll('.shop-cells');
-
 const cells = document.querySelectorAll(".cell");
 const victoryScreen = document.querySelector(".victory-screen");
 const restartButton = document.querySelector('.play-again-btn');
