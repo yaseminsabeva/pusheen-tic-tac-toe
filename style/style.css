@@ -59,8 +59,9 @@ header > div {
 }
 
 section {
-  height: 70vh;
+  min-height: 70vh;
   width: 100vw;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,6 +78,7 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  flex: 1 1 1 1;
   height: 125px;
   width: 125px;
   border: 5px solid rgb(255, 127, 161);
@@ -136,7 +138,8 @@ section {
 
 #board {
   width: 35%;
-  height: 500px;
+  height: initial;
+  aspect-ratio: 1;
   background-image: url(../images/board-bg.jpeg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -144,6 +147,7 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
+
 .box-design {
   position: relative;
   height: 450px;
@@ -204,6 +208,8 @@ section {
   border-radius: 1rem;
   padding: .7rem 1.3rem;
   text-align: center;
+  width: 70%;
+  margin: auto;
 }
 
 .victory-screen {
