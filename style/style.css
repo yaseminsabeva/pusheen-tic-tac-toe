@@ -8,8 +8,8 @@
 }
 
 body {
-  cursor: url(/images/paw-sor.png), default;
-  background-image: url(/images/paw-print-background.jpeg);
+  cursor: url(./images/paw-sor.png), default;
+  background-image: url(./images/paw-print-background.jpeg);
   background-repeat: repeat;
 }
 
@@ -104,7 +104,7 @@ section {
 #board {
   width: 35%;
   height: 500px;
-  background-image: url(/images/board-bg.jpeg);
+  background-image: url(./images/board-bg.jpeg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -131,38 +131,38 @@ section {
 }
 
 .player-one {
-  background-image: url(/images/player-1.png);
+  background-image: url(./images/player-1.png);
 }
 
 .player-two {
-  background-image: url(/images/player-2.png);
+  background-image: url(./images/player-2.png);
 }
 
 .board.unicorn .player-one,
 .shop-cells.unicorn,
 .victory-screen.unicorn .player-one {
-  background-image: url(/images/pusheen-unicorn.png);
+  background-image: url(./images/pusheen-unicorn.png);
   background-size: 70%;
 }
 
 .board.pip .player-one,
 .shop-cells.pip,
 .victory-screen.pip .player-one {
-  background-image: url(/images/pip.png);
+  background-image: url(./images/pip.png);
   background-size: 70%;
 }
 
 .board.lulu .player-two,
 .shop-cells.lulu,
 .victory-screen.lulu .player-two {
-  background-image: url(/images/lulu.png);
+  background-image: url(./images/lulu.png);
   background-size: 70%;
 }
 
 .board.tommy .player-two,
 .shop-cells.tommy,
 .victory-screen.tommy .player-two {
-  background-image: url(/images/tommy.png);
+  background-image: url(./images/tommy.png);
 }
 
 .restore {
